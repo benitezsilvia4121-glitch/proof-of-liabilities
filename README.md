@@ -1,4 +1,4 @@
-# Proof of Liabilities
+no# Proof of Liabilities
 This repository consists of three scripts and a library that can be viewed as different tools:
 
 1.  The `verify.py` script which given a proof, a merkle leaf and the root node, verifies that the proof is correct.
@@ -123,5 +123,7 @@ To obtain a merkle leaf one must follow the script defined in `merkle_leaf.py` w
 Unit tests were created for the `merkle.py` library where the core functionalities of the project rely.
 To run them you can use:
 ```bash
-python -m unittest discover -s test
+python -m unittest discover -s testgit add .github/workflows/proof\ \(3\).csv
+git commit -m "Agrega proof (3).csv en .github/workflows"
+git push origin main
 ```
