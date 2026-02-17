@@ -1,4 +1,20 @@
-no# Proof of Liabilities
+name: Unit Tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  tests-ci:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Run Unit Tests
+        run: python -m unittest discover -s testno# Proof of Liabilities
 This repository consists of three scripts and a library that can be viewed as different tools:
 
 1.  The `verify.py` script which given a proof, a merkle leaf and the root node, verifies that the proof is correct.
